@@ -55,7 +55,7 @@ while(position<100) {
     count++;
 
 }
-        System.out.println("count is "+count);
+        System.out.println("Total dice count is  "+count);
 
 
 
