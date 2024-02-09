@@ -21,6 +21,9 @@ while(position<100) {
             position = position;
             if(position<0){
                 position=startposition;
+            } else if (position>100) {
+                position=position-dieroll;
+
             }
             System.out.println("At die roll "+dieroll+" At no play the position of player is  "+position);
 
@@ -35,14 +38,19 @@ while(position<100) {
         case "Ladder":
 
             position = position + dieroll;
-            if(position<0){
-                position=startposition;
+
+             if (position>100) {
+                position=position-dieroll;
+
             }
+
             System.out.println("At die roll "+dieroll+" At Ladder the position of player is  "+position);
             break;
 
 
     }
+
+
 
     count++;
 
