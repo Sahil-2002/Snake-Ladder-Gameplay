@@ -1,3 +1,5 @@
+import java.util.Random;
+
 public class Main {
     public static void main(String[] args)
     {
@@ -5,7 +7,8 @@ public class Main {
         int startposition=0;
         System.out.println("Start position is "+startposition);
 
-
+        Random random = new Random();
+        int dieroll = random.nextInt(6)+1;
 
 
     }
